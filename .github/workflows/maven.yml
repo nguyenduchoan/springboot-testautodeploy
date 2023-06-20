@@ -29,4 +29,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Excute Jar file
-      run:
+      run: RUNNER_TRACKING_ID="" && /data/spautodeployspring.sh &
